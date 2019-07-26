@@ -1,93 +1,101 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+<html>
 <head>
-  <meta charset="IOS-8859-1">
-  <!-- Includes japanese into the webpage -->
+  <title>Darren Jian's personal website</title>
+  <style type="text/css">
+    @font-face {
+      font-family: "Aileron";
+      font-style: normal;
+      font-weight: 200;
+      src: url('./css/aileron/Aileron-UltraLight.otf')
+    }
+      @font-face {
+        font-family: "AileronBold";
+        font-style: bold;
+        font-weight: 400;
+        src: url('./css/aileron/Aileron-Black.otf')
+      }
+      @font-face {
+        font-family: "AileronItalic";
+        font-style: italic;
+        src: url('./css/aileron/Aileron-UltraLightItalic.otf')
+      }
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="nav-title " href="#">Darren Jian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-    <meta name="author" content="Darren Jian">
+    <!------------------------------------------->
+    <section id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <br>
+            <br>
+            <h3>About</h3>
+            <p>I am a third year undergraduate student at UCSD majoring in Mathemathics-Computer Science. I have a passion for smart devices and web design.</p>
+            <b>Check out my other interests <a href="#">here</a>.</b>
+          </div>
+        </div>
+      </div>
+    <br>
+    <br>
+    </section>
 
-    <meta name="description" content="This is my very first website, and it
-              is based on the canine, <strong>Corgi</strong>, because they
-          are <em>cute</em> and easy to talk about!">
-  <!--Use this description to include keywords relating to the content
-    on the page so that it has the potential to make your page appear
-    higher in relevant searches performed in search engines
-    It is also what shows up as descriptions on search engines.-->
+    <!------------------------------------------------------>
+    <section id="Projects">
+      <div class="container text-center">
+        <h3 class="title">Projects</h3>
+        <div class="row text-center">
+          <div class="col-md-4 services">
+            <img src="images/alexa.png" class="service-img">
+            <h6>Alexa Wikipedia Skill</h6>
+            <p>Developed a sophisticated skill for alexa using a lambda function capable of accessing Wikipedia and extracting the desired information.</p>
+          </div>
+          <div class="col-md-4 services">
+            <img src="images/sun1.png" class="service-img">
+            <h6>Solar Powered Autoclave</h6>
+            <p>Produced a dual-purpose solar powered autoclaveunit to sterilize medical equipment as well as produce potable
+              water for areas without access to electricity using a reflective paraboloid and heat-exchanger to maximize energy efficiency.
+              Successfully reached temperatures of around 80&#176C.</p>
+          </div>
+          <div class="col-md-4 services">
+            <img src="images/speaker.png" class="service-img">
+            <h6>CUSTOMIZABLE LED DISPLAY SPEAKERS</h6>
+            <p>Developed python script for a RaspberryPi capable of controlling LED lights.
+              Used Adafruit library to design functions capable of displaying sprites, symbols, and the alphabet on a LEDmatrix.</p>
 
-  <link rel="stylesheet" href="/css/style.css">
+          </div>
+      </div>
+    </section>
 
-  <!-- Create a facebook tag for the images when you link -->
-  <meta property="og:image" content="images/apple-touch-icon.png">
-  <meta property="og:description" content="Corgi blah blah blah
-  everyone loves them. Up, down, left, right. ">
 
-    <!-- Titles the page. Essentially displayed for bookmarks -->
-    <meta property="og:title" content="Corgi!">
-
-    <!-- Website icon that appears in tabs -->
-    <link rel='icon' href='img/favicon.png' type='image/png'>
-
-    <!-- icon that appears when bookmarking on the iphone or saving
-    to the home screen -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<!-- ###################################################################-->
-  <title>Darren's favorite pets</title>
-  </head>
-=======
->>>>>>> 226ed9fba268c6e061b7b29c082a7d51bad0b1da
->>>>>>> wtf
-<div class="container">
-
-			<div class="st-container">
-
-				<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-				<a href="#st-panel-1">Serendipity</a>
-				<input type="radio" name="radio-set" id="st-control-2"/>
-				<a href="#st-panel-2">Happiness</a>
-				<input type="radio" name="radio-set" id="st-control-3"/>
-				<a href="#st-panel-3">Tranquillity</a>
-				<input type="radio" name="radio-set" id="st-control-4"/>
-				<a href="#st-panel-4">Positivity</a>
-				<input type="radio" name="radio-set" id="st-control-5"/>
-				<a href="#st-panel-5">Passion</a>
-
-				<div class="st-scroll">
-
-					<!-- Placeholder text from http://hipsteripsum.me/ -->
-
-					<section class="st-panel" id="st-panel-1">
-            <div class="st-deco" data-icon="&#xf069;"></div>
-						<h2>Serendipity</h2>
-						<p>Banksy adipisicing eiusmod banh mi sed. Squid stumptown est odd future nisi, commodo mlkshk pop-up adipisicing retro.</p>
-					</section>
-
-					<section class="st-panel st-color" id="st-panel-2">
-						<div class="st-deco" data-icon="&#xf118;"></div>
-						<h2>Happiness</h2>
-						<p>Art party readymade beard labore cosby sweater culpa. Art party whatever incididunt, scenester umami polaroid tofu.</p>
-					</section>
-
-					<section class="st-panel" id="st-panel-3">
-						<div class="st-deco" data-icon="&#xf0f4;"></div>
-						<h2>Tranquillity</h2>
-						<p>Sint aute occaecat id vice. Post-ironic fap pork belly next level godard, id fanny pack williamsburg forage truffaut.</p>
-					</section>
-
-					<section class="st-panel st-color" id="st-panel-4">
-						<div class="st-deco" data-icon="&#xf06c;"></div>
-						<h2>Positivity</h2>
-						<p>Mixtape fap leggings art party, butcher authentic farm-to-table you probably haven't heard of them do labore cosby sweater.</p>
-					</section>
-
-					<section class="st-panel" id="st-panel-5">
-						<div class="st-deco" data-icon="&#xf004;"></div>
-						<h2>Passion</h2>
-						<p>Fixie ad odd future polaroid dreamcatcher, nesciunt carles bicycle rights accusamus mcsweeney's mumblecore nulla irony.</p>
-					</section>
-
-				</div><!-- // st-scroll -->
-
-			</div><!-- // st-container -->
-
-</div>
+  </body>
+</html>
