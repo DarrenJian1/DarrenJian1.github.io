@@ -72,7 +72,7 @@ a {
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #821134;
+	background: #215162;
 }
 
 .st-container > input:checked + a:after,
