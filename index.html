@@ -8,6 +8,12 @@
       font-weight: 200;
       src: url('./css/aileron/Aileron-UltraLight.otf')
     }
+    @font-face {
+      font-family: "AileronNormal";
+      font-style: normal;
+      font-weight: 200;
+      src: url('./css/aileron/Aileron-Light.otf')
+    }
       @font-face {
         font-family: "AileronBold";
         font-style: bold;
@@ -28,13 +34,17 @@
 </head>
   <body>
     <section id="nav-bar">
+      <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="nav-title " href="#">Darren Jian</a>
+        <a class=" navbar-brand nav-title " href="index.html">Darren Jian</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./images/DarrenJian_Resume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" href="index.html#About">About</a>
             </li>
@@ -50,6 +60,32 @@
           </ul>
         </div>
       </nav>
+<!--      <div class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="800px">
+        <a class="nav-title " href="#">Darren Jian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./images/DarrenJian_Resume.pdf" target="_blank">Resume <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      </div>
     </section>
 
     <!------------------------------------------->
@@ -57,19 +93,42 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <br>
-            <br>
             <h3>About</h3>
             <p>I am a third year undergraduate student at UCSD majoring in Mathemathics-Computer Science. I have a passion for smart devices and web design.</p>
             <b>Check out my other interests <a href="#">here</a>.</b>
           </div>
         </div>
       </div>
-    <br>
-    <br>
+    </section>
+    <!------------------------------------------->
+    <section id="Education">
+      <div class="container text-center">
+        <h3 class="title">Education</h3>
+        <br>
+        <div class="row">
+          <div class="col-md-6 geisel">
+            <img src="./images/ucsd.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-6 text-left">
+            <h4>University of California, San Diego</h5>
+            <h7>Bachelors of Science in Mathematics-Computer Science<br>Cum GPA: 3.56 </h7>
+            <br>
+            <br>
+            <b>Relevant Coursework: </b>
+            <ul class="courses">
+              <li>Intro to Computer Science and OO Programming</li>
+              <li>Basic Data Structures and OO Design</li>
+              <li>Intro to Discrete Mathematics</li>
+              <li>Software Tools and Techniques Lab</li>
+              <li>Management of Diverse Teams</li>
+              <li>Public Speaking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!------------------------------------------------------>
+    <!---------------------------------------------------------------->
     <section id="Projects">
       <div class="container text-center">
         <h3 class="title">Projects</h3>
@@ -84,7 +143,7 @@
             <h6>Solar Powered Autoclave</h6>
             <p>Produced a dual-purpose solar powered autoclaveunit to sterilize medical equipment as well as produce potable
               water for areas without access to electricity using a reflective paraboloid and heat-exchanger to maximize energy efficiency.
-              Successfully reached temperatures of around 80&#176C.</p>
+              Successfully reached temperatures of around 80<!--&#176-->C.</p>
           </div>
           <div class="col-md-4 services">
             <img src="images/speaker.png" class="service-img">
@@ -97,5 +156,23 @@
     </section>
 
 
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>

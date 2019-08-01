@@ -8,14 +8,19 @@ a.nav-title {
 }
 
 #About {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
-  height: 50%;
-  background-position: center;
+  /*background: url('https://source.unsplash.com/GJ8ZQV7eGmU/1920x1080') no-repeat center center fixed;*/
+  /*background: url('https://source.unsplash.com/ZIDL2-88SEI/1920x1080') no-repeat center center fixed;*/
+  /*background: url('https://source.unsplash.com/gWI_AubesEQ/1920x1080') no-repeat center center fixed;*/
+  background: url('https://source.unsplash.com/YA-DFlSzXBE/1920x1080') no-repeat center center fixed;
+  background-image: url(./images/cristina.jpg) no repeat center center fixed;*/
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .navbar-nav li {
@@ -65,9 +70,24 @@ a.nav-title {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin:bottom: 40px;
+  margin:bottom: 50px;
   display: block;
   transform: translateY(5px);
+}
+
+.geisel {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#Education {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+#Projects {
+  background: #f8f9fa;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 /*.nav-bar {
   background-color: rgba(0,0,0,0);
