@@ -12,7 +12,7 @@ a.nav-title {
   /*background: url('https://source.unsplash.com/ZIDL2-88SEI/1920x1080') no-repeat center center fixed;*/
   /*background: url('https://source.unsplash.com/gWI_AubesEQ/1920x1080') no-repeat center center fixed;*/
   background: url('https://source.unsplash.com/YA-DFlSzXBE/1920x1080') no-repeat center center fixed;
-  background-image: url(./images/cristina.jpg) no repeat center center fixed;*/
+  background-image: url(./images/cristina.jpg) no repeat center center fixed;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,6 +34,9 @@ a.nav-title {
   text-align:left;
 }
 
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #adabab !important;
+}
 .fa-bars{
   color: #fff;
   font-size 30px !important;
@@ -88,6 +91,10 @@ a.nav-title {
   background: #f8f9fa;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+.Logos {
+  max-width: 150px;
+  max-height: 75px;
 }
 /*.nav-bar {
   background-color: rgba(0,0,0,0);
