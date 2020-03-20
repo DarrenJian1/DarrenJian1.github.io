@@ -23,6 +23,22 @@ a.nav-title {
   padding-bottom: 40px;
 }
 
+#Contact {
+  /*background: url('https://source.unsplash.com/GJ8ZQV7eGmU/1920x1080') no-repeat center center fixed;*/
+  /*background: url('https://source.unsplash.com/ZIDL2-88SEI/1920x1080') no-repeat center center fixed;*/
+  /*background: url('https://source.unsplash.com/gWI_AubesEQ/1920x1080') no-repeat center center fixed;*/
+  background: url('https://source.unsplash.com/YA-DFlSzXBE/1920x1080') no-repeat center center fixed;
+  background-image: url(./images/cristina.jpg) no repeat center center fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 270px;
+}
+
 .navbar-nav li {
   padding: 0 10px;
 }
@@ -87,7 +103,12 @@ a.nav-title {
   padding-bottom: 30px;
   padding-top: 20px;
 }
-#Projects {
+#Project {
+  background: #f8f9fa;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#Experience {
   background: #f8f9fa;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -95,6 +116,15 @@ a.nav-title {
 .Logos {
   max-width: 150px;
   max-height: 75px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.globalties {
+  max-width: 200px;
+  max-height: 300x;
+}
+.contactDec:hover {
+  text-decoration: none;
 }
 /*.nav-bar {
   background-color: rgba(0,0,0,0);
