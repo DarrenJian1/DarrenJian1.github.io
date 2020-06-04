@@ -43,6 +43,7 @@
 <body>
 
     <div class="wrapper">
+        <div>
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <a class=" sidebar-header navbar-brand nav-title " href="index.html">Darren Jian</a>
@@ -65,7 +66,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hognose Snake</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" data-filter="none" aria-expanded="false" class="dropdown-toggle">Hognose Snake</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
                             <a href="#">Ramen</a>
@@ -83,7 +84,7 @@
                 </li>
             </ul>
         </nav>
-
+        </div>
         <!-- Page Content Holder -->
         <div id="content">
 
@@ -122,19 +123,21 @@
             <p>Welcome to my personal blog where I will be documenting all my pursuits in various hobbies! My interests mainly lie with nature and animals.  </p>
             <p>I'm using this to share my experiences and to store all the information I gather in one location so that future me can use this as reference as well!</p>
             <h2 class = "text-center">Photo Gallery</h2>
-            <div style="height: 1000px">
+            <div>
                 <div class="controls" >
                     <button type="button" class="control" data-filter="all">All</button>
                     <button type="button" class="control" data-filter=".plant">Plants</button>
                     <button type="button" class="control" data-filter=".aquascape">Aquascape</button>
                     <button type="button" class="control" data-filter=".snake">Snakes</button>
+                    <!--
                     <button type="button" class="control" data-filter="none">None</button>
         
                     <button type="button" class="control" data-sort="default:asc">Asc</button>
                     <button type="button" class="control" data-sort="default:desc">Desc</button>
+                    -->
                 </div>
         
-                <div class="container" id="mix-wrapper">
+                <div class="container text-center" id="mix-wrapper">
                     <img src="./images/snakes/cow_SOT.jpg" class="snake plant mix" alt="image">
                     <img src="./images/plants/SOH_day120.JPG" class="plant mix" alt="image">
                     <img src="./images/plants/plants_all.jpg" class="plant mix" alt="image">
@@ -145,6 +148,20 @@
                     <img src="./images/snakes/ramen_monstera.jpg" class="snake plant mix" alt="image">
                     
         
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+                    <div class="gap"></div>
                     <div class="gap"></div>
                     <div class="gap"></div>
                     <div class="gap"></div>
@@ -178,9 +195,6 @@
                 nudge: false,
                 reverseOut: false,
                 effects: "fade"
-            },
-            layout: {
-                allowNestedTargets: true
             },
             load: {
                 sort: 'random'

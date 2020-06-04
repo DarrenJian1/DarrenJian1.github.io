@@ -68,6 +68,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    height: 100%;
     background: black;
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
@@ -349,7 +350,7 @@ a.article, a.article:hover {
 
 .mix {
     border-radius: 2px;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 0; 
     position: relative;
 }
 
@@ -363,32 +364,34 @@ a.article, a.article:hover {
 /* Grid Breakpoints
 ---------------------------------------------------------------------- */
 
-/* 2 Columns 
+/*2 Columns*/ 
 
 .mix,
 .gap {
-    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    height: calc(100%/2 - (((2 - 1) * 1rem) / 2));
 }
 
-/* 3 Columns 
+/*3 Columns*/ 
 
 @media screen and (min-width: 541px) {
+    
     .mix,
     .gap {
-        max-width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+        height: calc(100%/3 - (((3 - 1) * 1rem) / 3));
     }
 }
 
- 4 Columns 
+/* 4 Columns */
 
 @media screen and (min-width: 961px) {
     .mix,
     .gap {
-        max-width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+        height: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+        
     }
 }
 
- 5 Columns 
+/* 5 Columns 
 
 @media screen and (min-width: 1281px) {
     .mix,
@@ -401,9 +404,11 @@ a.article, a.article:hover {
 .filter-image{
     max-width: 300px;
 }
-
 */
-
+.container {
+    height: 1000px;
+}
+/*
 .container {
     line-height: 0px;
      
@@ -414,7 +419,7 @@ a.article, a.article:hover {
     column-count:         4;
     column-gap:           10px;
   }
-
+/*
   .container img {
     width: 100%;
     height: auto;
