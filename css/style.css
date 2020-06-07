@@ -125,8 +125,22 @@ a.nav-title {
   max-width: 200px;
   max-height: 300x;
 }
+.carouselImages{
+  max-height: 300px;
+}
+.carousel-inner{
+  background-color inherit;
+}
+.morePadding {
+  margin: 10px;
+}
 .contactDec:hover {
   text-decoration: none;
+}
+
+.centerBlock {
+  display: table;
+  margin: auto;
 }
 /*.nav-bar {
   background-color: rgba(0,0,0,0);
