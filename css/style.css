@@ -74,7 +74,7 @@ a.nav-title {
 
 .title::before{
   content: '';
-  background: #25f;
+  background: #f6e6d9;
   height: 5px;
   width: 200px;
   margin-left: auto;
@@ -84,7 +84,7 @@ a.nav-title {
 }
 .title::after{
   content: '';
-  background: #25f;
+  background: #f6dbc6;
   height: 10px;
   width: 50px;
   margin-left: auto;
@@ -109,7 +109,7 @@ a.nav-title {
   padding-top: 30px;
 }
 #Experience {
-  background: #f8f9fa;
+  background: #faf9f7;
   padding-bottom: 30px;
   padding-top: 30px;
 }

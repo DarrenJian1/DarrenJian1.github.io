@@ -1,213 +1,151 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Collapsible sidebar using Bootstrap 4</title>
-    <style type="text/css">
-        @font-face {
-          font-family: "Aileron";
-          font-style: normal;
-          font-weight: 200;
-          src: url('../css/aileron/Aileron-UltraLight.otf')
-        }
-        @font-face {
-          font-family: "AileronNormal";
-          font-style: normal;
-          font-weight: 200;
-          src: url('../css/aileron/Aileron-Light.otf')
-        }
-          @font-face {
-            font-family: "AileronBold";
-            font-style: bold;
-            font-weight: 400;
-            src: url('../css/aileron/Aileron-Black.otf')
-          }
-          @font-face {
-            font-family: "AileronItalic";
-            font-style: italic;
-            src: url('../css/aileron/Aileron-UltraLightItalic.otf')
-          }
-      </style>
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-
+  <title>Darren Jian's Website</title>
+  <style type="text/css">
+    @font-face {
+      font-family: "Aileron";
+      font-style: normal;
+      font-weight: 200;
+      src: url('../css/aileron/Aileron-UltraLight.otf')
+    }
+    @font-face {
+      font-family: "AileronNormal";
+      font-style: normal;
+      font-weight: 200;
+      src: url('../css/aileron/Aileron-Light.otf')
+    }
+      @font-face {
+        font-family: "AileronBold";
+        font-style: bold;
+        font-weight: 400;
+        src: url('../css/aileron/Aileron-Black.otf')
+      }
+      @font-face {
+        font-family: "AileronItalic";
+        font-style: italic;
+        src: url('../css/aileron/Aileron-UltraLightItalic.otf')
+      }
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body>
-
-    <div class="wrapper">
-        <div>
-        <!-- Sidebar Holder -->
-        <nav id="sidebar">
-            <a class=" sidebar-header navbar-brand nav-title " href="index.html">Darren Jian</a>
-            <ul class="list-unstyled components">
-                <li id="home">
-                    <a href="index.html#home">Hobbies and Interests</a>
-                </li>
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Plants</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Philodendron</a>
-                        </li>
-                        <li>
-                            <a href="#">Anthurium</a>
-                        </li>
-                        <li>
-                            <a href="#">Other</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" data-filter="none" aria-expanded="false" class="dropdown-toggle">Hognose Snake</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Ramen</a>
-                        </li>
-                        <li>
-                            <a href="#">Sriracha</a>
-                        </li>
-                        <li>
-                            <a href="#">Cow</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Aquascape</a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-        <!-- Page Content Holder -->
-        <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            
-            <h2 class = "text-center">Hobbies and Interests</h2>
-            <p>Welcome to my personal blog where I will be documenting all my pursuits in various hobbies! My interests mainly lie with nature and animals.  </p>
-            <p>I'm using this to share my experiences and to store all the information I gather in one location so that future me can use this as reference as well!</p>
-            <h2 class = "text-center">Photo Gallery</h2>
-            <div>
-                <div class="controls" >
-                    <button type="button" class="control" data-filter="all">All</button>
-                    <button type="button" class="control" data-filter=".plant">Plants</button>
-                    <button type="button" class="control" data-filter=".aquascape">Aquascape</button>
-                    <button type="button" class="control" data-filter=".snake">Snakes</button>
-                    <!--
-                    <button type="button" class="control" data-filter="none">None</button>
-        
-                    <button type="button" class="control" data-sort="default:asc">Asc</button>
-                    <button type="button" class="control" data-sort="default:desc">Desc</button>
-                    -->
-                </div>
-        
-                <div class="container text-center" id="mix-wrapper">
-                    <img src="./images/snakes/cow_SOT.jpg" class="snake plant mix" alt="image">
-                    <img src="./images/plants/SOH_day120.JPG" class="plant mix" alt="image">
-                    <img src="./images/plants/plants_all.jpg" class="plant mix" alt="image">
-                    <img src="./images/aquascape/aquascape_1.JPG" class="aquascape mix" alt="image">
-                    <img src="./images/plants/macodes.jpg" class="plant mix" alt="image">
-                    <img src="./images/plants/project_SOT.jpg" class="plant mix" alt="image">
-                    <img src="./images/aquascape/aquascape_1top.jpg" class="aquascape mix" alt="image">
-                    <img src="./images/snakes/ramen_monstera.jpg" class="snake plant mix" alt="image">
-                    
-        
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div class = "text-center">
-                <iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23dddddd&amp;ctz=America%2FLos_Angeles&amp;src=YXAwZDRodnF0cTRjb29ha2lhaTVzZTRsMWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E&amp;title&amp;mode=AGENDA" style="border:solid 1px #777" width="700" height="500" frameborder="0" scrolling="no"></iframe>
-            </div>
-                <div class="line"></div>
-
-        </div>
+  <body>
+    <div class = "col-md-5">
+    <section id="nav-bar">
+      <div class="main_menu">
+      <nav class="navbar navbar-expand navbar-light">
+        <a class=" navbar-brand nav-title text-white" href="index.html">Darren Jian</a>
+        <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      </div>
+    </section>
     </div>
+    <div class="container-fluid">
+      <div class="row min-vh-100 flex-column flex-md-row">
+          <aside id = "sidebar" class="col-12 col-md-1 p-0 flex-shrink-1 fixed-left">
+              <nav class="navbar navbar-expand navbar-light darkColor flex-md-column flex-row align-items-start py-2">
+                  <div class="collapse navbar-collapse fontNormal">
+                      <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                          <li class="nav-item">
+                              <a class="nav-link pl-0 text-nowrap" href="#"><i class="fa fa-leaf fa-fw"></i> <span class="font-weight-bold">Plants</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="#"><i class="fa fa-book fa-fw"></i> <span class="d-none d-md-inline">Link</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="#"><i class="fa fa-cog fa-fw"></i> <span class="d-none d-md-inline">Link</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="#"><i class="fa fa-paw codeply fa-fw"></i> <span class="d-none d-md-inline">Hognose Snake</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="#"><i class="fa fa-star codeply fa-fw"></i> <span class="d-none d-md-inline">Link</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link pl-0" href="#"><i class="fa fa-star fa-fw"></i> <span class="d-none d-md-inline">Link</span></a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </aside>
+          <div class="container col bg-faded py-3 flex-grow-1 relative-right">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class = "text-center">Hobbies and Interests</h2>
+                <p>Welcome to my personal blog where I will be documenting all my pursuits in various hobbies! My interests mainly lie with nature and animals.  </p>
+                <p>I'm using this to share my experiences and to store all the information I gather in one location so that future me can use this as reference as well!</p>
+                <h2 class = "text-center">Photo Gallery</h2>
+              <div class="controls margin-white" >
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".plant">Plants</button>
+                <button type="button" class="control" data-filter=".aquascape">Aquascape</button>
+                <button type="button" class="control" data-filter=".snake">Snakes</button>
+                <!--
+                <button type="button" class="control" data-filter="none">None</button>
+    
+                <button type="button" class="control" data-sort="default:asc">Asc</button>
+                <button type="button" class="control" data-sort="default:desc">Desc</button>
+                -->
+            </div>
+              <div class="container margin-white" id="mix-wrapper">
+                <img src="./images/snakes/cow_SOT.jpg" class="snake plant mix" alt="image">
+                <img src="./images/plants/SOH_day120.JPG" class="plant mix" alt="image">
+                <img src="./images/plants/plants_all.jpg" class="plant mix" alt="image">
+                <img src="./images/aquascape/aquascape_1.JPG" class="aquascape mix" alt="image">
+                <img src="./images/plants/macodes.jpg" class="plant mix" alt="image">
+                <img src="./images/plants/project_SOT.jpg" class="plant mix" alt="image">
+                <img src="./images/aquascape/aquascape_1top.jpg" class="aquascape mix" alt="image">
+                <img src="./images/snakes/ramen_monstera.jpg" class="snake plant mix" alt="image">
+                
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+    <!------------------------------------------->
+    <!------------------------------------------->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+
     <!-- Mixitup JS-->
     <script src="js/mixitup.min.js"></script>
-    <!-- Our Custom JS -->
-    <script async src="js/script.js"></script>
-    
+
     <script>
-        var containerEl = document.querySelector('.container');
+      var containerEl = document.querySelector('.container');
 
-        var mixer = mixitup(containerEl, {
-            animation: {
-                duration: 450,
-                nudge: false,
-                reverseOut: false,
-                effects: "fade"
-            },
-            load: {
-                sort: 'random'
-            }
-        });
-    </script>
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-
-
-</body>
-
+      var mixer = mixitup(containerEl, {
+          animation: {
+              duration: 450,
+              nudge: false,
+              reverseOut: false,
+              effects: "fade"
+          },
+          load: {
+              sort: 'random'
+          }
+      });
+  </script>
+  </body>
 </html>
