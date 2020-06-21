@@ -99,6 +99,15 @@ a, a:hover, a:focus {
 .darkColor {
     background: (0,0,0,0) !important;
 }
+.vertical-spacer{
+    border: 0px;
+    background: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 0;
+}
+
 .fixed-topp{
     position: fixed !important;
     top: 0px;
@@ -109,6 +118,7 @@ a, a:hover, a:focus {
 }
 .fixed-right{ 
     text-align: left !important;
+    display: block !important;
     
 }
 .relative-right {
@@ -137,7 +147,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar{
-
+    z-index: 289;
 }
 
 .margin-white{
