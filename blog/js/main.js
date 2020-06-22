@@ -24,7 +24,7 @@ $(function() {
 
     var headerLeft = header.offset().left;
     var righterLeft = righter.offset().left;
-    var righterPad = righter.css('padding');
+    var righterPad = righter.css('padding-left');
     var navHeight = navbars.css("height");
     var headerHeight = header.css("height");
     var docHeight = $(window).height();
@@ -64,8 +64,8 @@ $(function() {
         righterHeight = righter.css("height");
     });
 
-    $( ".print-statement" ).text( "The height for the header is " + headerHeight );
-    $( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
+    $( ".print-statement" ).text("The left position of the right is " + righterLeft );
+    $( ".print-statements" ).text("The right padding for the right is " +  righterPad);
 
     if ($sidebar.length > 0) {
 
