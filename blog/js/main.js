@@ -89,6 +89,13 @@ $(function() {
                 $('.fixed-left').css('left', headerLeft);
                 $('.relative-right').css('padding-left', (parseInt(righterPad,10)+"px"));
                 $('.vertical-spacer').css('height', 0);
+                headerLeft = header.offset().left;
+                righterLeft = righter.offset().left;
+                righterPad = righter.css('padding-left');
+                navHeight = navbars.css("height");
+                headerHeight = header.css("height");
+                docHeight = $(window).height();
+                righterHeight = righter.css("height");
             }
         });
     }
