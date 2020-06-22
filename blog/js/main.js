@@ -95,5 +95,12 @@ $(function() {
             }
         });
     }
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        /* The viewport is less than, or equal to, 700 pixels wide */
+        $('.fixed-left').css('max-height', 50px);
+    } 
+    else {
+        /* The viewport is greater than 700 pixels wide */
+    }
     //$( ".print-statements" ).text( "The height for the flex-row is " +  $('.vertical-spacer').css('height'));
 });
