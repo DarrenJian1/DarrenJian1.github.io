@@ -62,7 +62,7 @@ $(function() {
         righterHeight = righter.css("height");
     });
 
-    console.log("Header Height: ",headerHeight);
+    $( ".vertical-spacer" ).text( "The height for the header is " + headerHeight + "px." );
 
     if ($sidebar.length > 0) {
 
