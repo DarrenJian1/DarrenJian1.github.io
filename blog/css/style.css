@@ -99,6 +99,10 @@ a, a:hover, a:focus {
     height:50px;
     color: white;
 }
+.print-statements{
+    height:50px;
+    color: white;
+}
 
 .fixed-topp{
     position: fixed !important;

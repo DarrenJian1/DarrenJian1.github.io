@@ -20,6 +20,7 @@ $(function() {
     var header = $(".fixed-left");
     var righter = $(".relative-right");
     var navbars = $("#nav-bar");
+    var flexrow = $(".flex-row")
 
     var headerLeft = header.offset().left;
     var righterLeft = righter.offset().left;
@@ -28,6 +29,7 @@ $(function() {
     var headerHeight = header.css("height");
     var docHeight = $(window).height();
     var righterHeight = righter.css("height");
+    var flexRowHeight = flexrow.css("height");
 
     $window.resize(function () {
         console.log("resize event");
@@ -63,6 +65,7 @@ $(function() {
     });
 
     $( ".print-statement" ).text( "The height for the header is " + headerHeight );
+    $( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
 
     if ($sidebar.length > 0) {
 
