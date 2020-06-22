@@ -112,6 +112,9 @@ a, a:hover, a:focus {
 .fixed-left{
    
 }
+.flex-row {
+    max-height: 200px !important;
+}
 .fixed-right{ 
     text-align: left !important;
     display: block !important;

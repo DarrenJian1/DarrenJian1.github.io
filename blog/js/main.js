@@ -20,7 +20,7 @@ $(function() {
     var header = $(".fixed-left");
     var righter = $(".relative-right");
     var navbars = $("#nav-bar");
-    var flexrow = $(".flex-row")
+    var flexrow = $(".navbar-nav");
 
     var headerLeft = header.offset().left;
     var righterLeft = righter.offset().left;
