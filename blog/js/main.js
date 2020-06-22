@@ -65,7 +65,7 @@ $(function() {
     });
 
     $( ".print-statement" ).text( "The height for the header is " + headerHeight );
-    //$( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
+    $( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
 
     if ($sidebar.length > 0) {
 
@@ -90,9 +90,10 @@ $(function() {
                 $('.fixed-left').css('left', headerLeft);
                 $('.relative-right').css('padding-left', (parseInt(righterPad,10)+"px"));
                 $('.vertical-spacer').css('height', 0);
+                header.css('height',50 );
 
             }
         });
     }
-    $( ".print-statements" ).text( "The height for the flex-row is " +  $('.vertical-spacer').css('height'));
+    //$( ".print-statements" ).text( "The height for the flex-row is " +  $('.vertical-spacer').css('height'));
 });
