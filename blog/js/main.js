@@ -79,7 +79,7 @@ $(function() {
                 righter.removeClass('relative-right').addClass('fixed-right');
                 $('.fixed-topp').css('left', headerLeft);
                 if(parseInt(navHeight) + parseInt(headerHeight) + parseInt(righterHeight) == parseInt(docHeight)){
-                    $('.vertical-spacer').css('height',  ((parseInt(flexRowHeight,10))+"px"));
+                    //$('.vertical-spacer').css('height',  ((parseInt(flexRowHeight,10))+"px"));
                     
                 }
                 $('.fixed-right').css('padding-left', ((parseInt(righterLeft,10)+parseInt(righterPad,10))+"px"));
