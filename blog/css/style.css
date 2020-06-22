@@ -110,7 +110,7 @@ a, a:hover, a:focus {
     left: 0px;
 }
 .fixed-left{
-    max-height: 200px !important;
+    
 }
 .flex-row {
 
@@ -149,12 +149,14 @@ a, a:hover, a:focus {
     z-index: 289;
 }
 
-.margin-white{
-    margin-
-}
-
 .width-small {
     width: 75%;
+}
+
+@media screen and (max-width: 767px){
+    .fixed-left{
+        max-height: 50px;
+    }
 }
 
 /* Controls
