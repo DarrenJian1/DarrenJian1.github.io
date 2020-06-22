@@ -95,6 +95,11 @@ a, a:hover, a:focus {
     height: 0;
 }
 
+.print-statement{
+    height:50px;
+    color: white;
+}
+
 .fixed-topp{
     position: fixed !important;
     top: 0px;
