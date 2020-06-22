@@ -13,14 +13,11 @@ var waitForFinalEvent = (function () {
 
 $(function() {
     var $window = $(window);
-    var lastScrollTop = $window.scrollTop();
-    var wasScrollingDown = true;
 
     var $sidebar = $("#sidebar");
     var header = $(".fixed-left");
     var righter = $(".relative-right");
     var navbars = $("#nav-bar");
-    var flexrow = $(".navbar-nav");
 
     var headerLeft = header.offset().left;
     var righterLeft = righter.offset().left;
@@ -29,7 +26,6 @@ $(function() {
     var headerHeight = header.css("height");
     var docHeight = $(window).height();
     var righterHeight = righter.css("height");
-    var flexRowHeight = flexrow.css("height");
 
     $window.resize(function () {
         console.log("resize event");
@@ -37,6 +33,7 @@ $(function() {
             console.log("Actual function");
             headerLeft = header.offset().left;
             righterLeft = righter.offset().left;
+            righterPad = righter.css('padding-left');
             navHeight = navbars.css("height");
             headerHeight = header.css("height");
             docHeight = $(window).height();
@@ -58,6 +55,7 @@ $(function() {
         console.log("orientation event");
         headerLeft = header.offset().left;
         righterLeft = righter.offset().left;
+        righterPad = righter.css('padding-left');
         navHeight = navbars.css("height");
         headerHeight = header.css("height");
         docHeight = $(window).height();
@@ -90,8 +88,6 @@ $(function() {
                 $('.fixed-left').css('left', headerLeft);
                 $('.relative-right').css('padding-left', (parseInt(righterPad,10)+"px"));
                 $('.vertical-spacer').css('height', 0);
-                header.css('height',50 );
-
             }
         });
     }
