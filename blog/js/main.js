@@ -42,8 +42,8 @@ $(function() {
         }, 500, "some unique id");
     });
 
-    $(window).bind('orientationchange', function(event){
-    /*    if(event.orientation) {
+    /*$(window).bind('orientationchange', function(event){
+       if(event.orientation) {
               if(event.orientation == 'portrait') {
             // do something
                 } else if (event.orientation == 'landscape') {
@@ -52,7 +52,7 @@ $(function() {
               } else {
                     // optional... PC-version javascript for example
                     }
-    */
+    
         console.log("orientation event");
         waitForFinalEvent(function () {
             console.log("Actual function");
@@ -64,6 +64,8 @@ $(function() {
             righterHeight = righter.css("height");
         }, 500, "some unique id");
     });
+    */
+    console.log("Header Height: ",headerHeight);
 
     if ($sidebar.length > 0) {
 
