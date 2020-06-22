@@ -15,6 +15,7 @@ $(function() {
     var $window = $(window);
 
     var $sidebar = $("#sidebar");
+    var $pager = $("#pager");
     var header = $(".fixed-left");
     var righter = $(".relative-right");
     var navbars = $("#nav-bar");
@@ -73,8 +74,8 @@ $(function() {
             var scroll = $(window).scrollTop();
     
             if (scroll >= parseInt(navHeight)) {
-                header.removeClass('fixed-left').addClass('fixed-topp');
-                righter.removeClass('relative-right').addClass('fixed-right');
+                $sidebar.removeClass('fixed-left').addClass('fixed-topp');
+                $pager.removeClass('relative-right').addClass('fixed-right');
                 $('.fixed-topp').css('left', headerLeft);
                 if(parseInt(navHeight) + parseInt(headerHeight) + parseInt(righterHeight) == parseInt(docHeight)){
                     $('.vertical-spacer').css('height',  ((parseInt(headerHeight,10))+"px"));
@@ -83,8 +84,8 @@ $(function() {
                 $('.fixed-right').css('padding-left', ((parseInt(righterLeft,10)+parseInt(righterPad,10))+"px"));
     
             } else {
-                header.removeClass("fixed-topp").addClass('fixed-left');
-                righter.removeClass('fixed-right').addClass('relative-right');
+                $sidebar.removeClass("fixed-topp").addClass('fixed-left');
+                $pager.removeClass('fixed-right').addClass('relative-right');
                 $('.fixed-left').css('left', headerLeft);
                 $('.relative-right').css('padding-left', (parseInt(righterPad,10)+"px"));
                 $('.vertical-spacer').css('height', 0);

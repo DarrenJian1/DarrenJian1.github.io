@@ -118,6 +118,8 @@ a, a:hover, a:focus {
 .fixed-right{ 
     text-align: left !important;
     display: block !important;
+    float: left !important;
+    padding-left: 98.75px !important  vcdcxdx;
     
 }
 .relative-right {
@@ -147,6 +149,10 @@ a, a:hover, a:focus {
 
 #sidebar{
     z-index: 289;
+}
+
+#pager {
+    
 }
 
 .width-small {
