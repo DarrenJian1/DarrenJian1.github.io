@@ -12,7 +12,6 @@ var waitForFinalEvent = (function () {
 })();
 
 $(function() {
-
     var $window = $(window);
     var lastScrollTop = $window.scrollTop();
     var wasScrollingDown = true;
@@ -43,7 +42,7 @@ $(function() {
         }, 500, "some unique id");
     });
 
-    $(window).bind('orientationchange resize', function(event){
+    $(window).bind('orientationchange', function(event){
     /*    if(event.orientation) {
               if(event.orientation == 'portrait') {
             // do something
