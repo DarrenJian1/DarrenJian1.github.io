@@ -43,6 +43,29 @@ $(function() {
         }, 500, "some unique id");
     });
 
+    $(window).bind('orientationchange resize', function(event){
+    /*    if(event.orientation) {
+              if(event.orientation == 'portrait') {
+            // do something
+                } else if (event.orientation == 'landscape') {
+                         // do something else 
+                         } 
+              } else {
+                    // optional... PC-version javascript for example
+                    }
+    */
+        console.log("orientation event");
+        waitForFinalEvent(function () {
+            console.log("Actual function");
+            headerLeft = header.offset().left;
+            righterLeft = righter.offset().left;
+            navHeight = navbars.css("height");
+            headerHeight = header.css("height");
+            docHeight = $(window).height();
+            righterHeight = righter.css("height");
+        }, 500, "some unique id");
+    });
+
     if ($sidebar.length > 0) {
 
         //var initialSidebarTop = $sidebar.position().top;
