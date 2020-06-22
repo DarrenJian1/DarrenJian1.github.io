@@ -65,7 +65,7 @@ $(function() {
     });
 
     $( ".print-statement" ).text( "The height for the header is " + headerHeight );
-    $( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
+    //$( ".print-statements" ).text( "The height for the flex-row is " +  flexRowHeight);
 
     if ($sidebar.length > 0) {
 
@@ -79,7 +79,7 @@ $(function() {
                 righter.removeClass('relative-right').addClass('fixed-right');
                 $('.fixed-topp').css('left', headerLeft);
                 if(parseInt(navHeight) + parseInt(headerHeight) + parseInt(righterHeight) == parseInt(docHeight)){
-                    //$('.vertical-spacer').css('height',  ((parseInt(flexRowHeight,10))+"px"));
+                    $('.vertical-spacer').css('height',  ((parseInt(headerHeight,10))+"px"));
                     
                 }
                 $('.fixed-right').css('padding-left', ((parseInt(righterLeft,10)+parseInt(righterPad,10))+"px"));
@@ -94,4 +94,5 @@ $(function() {
             }
         });
     }
+    $( ".print-statements" ).text( "The height for the flex-row is " +  $('.vertical-spacer').css('height'));
 });
