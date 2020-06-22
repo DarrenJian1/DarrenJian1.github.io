@@ -110,10 +110,10 @@ a, a:hover, a:focus {
     left: 0px;
 }
 .fixed-left{
-   
+    max-height: 200px !important;
 }
 .flex-row {
-    max-height: 200px !important;
+
 }
 .fixed-right{ 
     text-align: left !important;
