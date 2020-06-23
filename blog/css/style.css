@@ -3,6 +3,28 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+.custom {
+    height: 101px;
+    padding: 7px 15px;
+    text-align: center;
+}
+
+.custom-text a:hover, .custom-text a:visited, .custom-text a:link, .custom-text a:active  {
+    font-family: Aileron, sans-serif;
+    font-weight: normal ;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 50px;
+    padding-top: 20px;
+}
+
+a.nav-text{
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    padding-bottom: 0px;
+}
 
 a.nav-title {
     font-family: Aileron, sans-serif;
@@ -12,6 +34,11 @@ a.nav-title {
     text-align: left;
     float:left;
 }
+
+a.nav-link {
+    color: white;
+}
+
 
 h2 {
     font-family: Aileron, sans-serif;
@@ -296,6 +323,31 @@ a, a:hover, a:focus {
     padding-top: 100%;
 }
 
+#gallery {
+  img {
+    height: 75vw;
+    object-fit: cover;
+    
+    @media (min-width: 576px) {
+      height: 35vw;
+    }
+    
+    @media (min-width: 992px) {
+      height: 18vw;
+    }
+  }
+}
+
+.carousel-item {
+  img {
+    height: 60vw;
+    object-fit: cover;
+    
+    @media (min-width: 576px) {
+      height: 350px;
+    }
+  }
+}
 
 /* Grid Breakpoints
 ---------------------------------------------------------------------- */
@@ -389,3 +441,5 @@ a, a:hover, a:focus {
     column-count:         1;
     }
   }
+
+
