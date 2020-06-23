@@ -105,16 +105,13 @@ a, a:hover, a:focus {
 }
 
 .fixed-topp{
-    /*position: fixed !important;*/
+    position: fixed !important;
     top: 0px;
     left: 0px;
 }
 .fixed-left{
-    position: -webkit-sticky !important; 
-    position: sticky !important; 
-    top: 0 !important;
+    
 }
-
 .flex-row {
 
 }
